@@ -71,19 +71,19 @@ namespace ClaimUI
                 },
                 new ElementBounds[]
                 {
-                    radialRoot.CopyOffsetedSibling(-150, -25, 25),
-                    radialRoot.CopyOffsetedSibling(-150, 0, 25),
-                    radialRoot.CopyOffsetedSibling(-150, 25, 25),
-                    radialRoot.CopyOffsetedSibling(-100, 0, 25),
-                    radialRoot.CopyOffsetedSibling(-100, -25, 25),
-                    radialRoot.CopyOffsetedSibling(-100, 25, 25),
-                    radialRoot.CopyOffsetedSibling(-50, -25),
-                    radialRoot.CopyOffsetedSibling(-50, 25),
-                    radialRoot.CopyOffsetedSibling(0, -25),
-                    radialRoot.CopyOffsetedSibling(0, 25),
-                    radialRoot.CopyOffsetedSibling(25, 0),
-                    radialRoot.CopyOffsetedSibling(-25, 0),
-                    radialRoot,
+                    radialRoot.CopyOffsetedSibling(-150, -25, 25),  // [0] New
+                    radialRoot.CopyOffsetedSibling(-150, 0, 25),    // [1] Start
+                    radialRoot.CopyOffsetedSibling(-150, 25, 25),   // [2] End
+                    radialRoot.CopyOffsetedSibling(-100, 0, 25),    // [3] Add
+                    radialRoot.CopyOffsetedSibling(-100, -25, 25),  // [4] Cancel
+                    radialRoot.CopyOffsetedSibling(-100, 25, 25),   // [5] Save
+                    radialRoot.CopyOffsetedSibling(-25, -25),       // [6] U (Up)
+                    radialRoot.CopyOffsetedSibling(-25, 25),        // [7] D (Down)
+                    radialRoot.CopyOffsetedSibling(0, -25),         // [8] N (North)
+                    radialRoot.CopyOffsetedSibling(0, 25),          // [9] S (South)
+                    radialRoot.CopyOffsetedSibling(25, 0),          // [10] E (East)
+                    radialRoot.CopyOffsetedSibling(-25, 0),         // [11] W (West)
+                    radialRoot,                                     // [12] OP toggle (at center)
                 }, "buttons")
                 .AddToggleButton("OP", CairoFont.ButtonText().WithFontSize(10),
                 b =>
