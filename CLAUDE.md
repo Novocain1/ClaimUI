@@ -36,7 +36,7 @@ dotnet build ClaimUI.csproj
 ### Component Structure
 
 **ClaimUISystem** ([src/Systems/ClaimUI.cs](src/Systems/ClaimUI.cs))
-- Extends `ClientModSystem` (requires `using Vintagestory.API.Common`)
+- Extends `ModSystem` (requires `using Vintagestory.API.Common`)
 - Entry point for the mod
 - Registers hotkey "claimgui" (default: L key)
 - Creates single `GuiDialogClaimUI` instance
