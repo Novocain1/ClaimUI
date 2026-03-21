@@ -16,3 +16,8 @@ dist/
 ## OS
 .DS_Store
 Thumbs.db
+
+## Exceptions - allow documentation images
+!docs/images/*.png
+!docs/images/*.jpg
+!docs/images/*.gif
