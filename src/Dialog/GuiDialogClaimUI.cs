@@ -20,7 +20,7 @@ namespace ClaimUI
             radialRoot = radialRoot.WithFixedOffset(165, 15);
 
             SingleComposer = capi.Gui.CreateCompo("claim", dialogBounds)
-                .AddDialogTitleBar("Claims", () => TryClose(), CairoFont.WhiteSmallText())
+                .AddDialogTitleBar("ClaimUI", () => TryClose(), CairoFont.WhiteSmallText())
                 .AddDialogBG(bgBounds)
                 .AddTextToggleButtons(new string[] { "New", "Start", "End", "Add", "Cancel", "Save", "U", "D", "N", "S", "E", "W" }, CairoFont.ButtonText().WithFontSize(10),
                 i =>
