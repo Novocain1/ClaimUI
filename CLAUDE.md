@@ -61,8 +61,9 @@ The dialog uses a radial layout created through `ElementBounds.CopyOffsetedSibli
 
 All buttons send chat messages via `capi.SendChatMessage("/land claim ...")`:
 - Cases 0-5: Direct commands (new, start, end, add, cancel, save)
-- Cases 6-11: Grid adjustments with multiplier `m` (affected by OP mode)
-- OP mode: When `op == true`, multiplier `m = -1`, otherwise `m = 1`
+- Cases 6-11: Area adjustments using grow/shrink commands
+- OP mode: When `op == true`, uses "shrink" commands; when false, uses "grow" commands
+  - Example: Button U sends `/land claim grow up 1` (OP off) or `/land claim shrink up 1` (OP on)
 
 ### State Persistence
 

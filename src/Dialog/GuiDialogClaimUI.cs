@@ -47,22 +47,22 @@ namespace ClaimUI
                             capi.SendChatMessage("/land claim save " + capi.World.Claims.All.Count);
                             break;
                         case 6:
-                            capi.SendChatMessage("/land claim gu " + m);
+                            capi.SendChatMessage(op ? "/land claim shrink up 1" : "/land claim grow up 1");
                             break;
                         case 7:
-                            capi.SendChatMessage("/land claim gd " + m);
+                            capi.SendChatMessage(op ? "/land claim shrink down 1" : "/land claim grow down 1");
                             break;
                         case 8:
-                            capi.SendChatMessage("/land claim gn " + m);
+                            capi.SendChatMessage(op ? "/land claim shrink north 1" : "/land claim grow north 1");
                             break;
                         case 9:
-                            capi.SendChatMessage("/land claim gs " + m);
+                            capi.SendChatMessage(op ? "/land claim shrink south 1" : "/land claim grow south 1");
                             break;
                         case 10:
-                            capi.SendChatMessage("/land claim ge " + m);
+                            capi.SendChatMessage(op ? "/land claim shrink east 1" : "/land claim grow east 1");
                             break;
                         case 11:
-                            capi.SendChatMessage("/land claim gw " + m);
+                            capi.SendChatMessage(op ? "/land claim shrink west 1" : "/land claim grow west 1");
                             break;
                         default:
                             break;

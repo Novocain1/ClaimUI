@@ -13,16 +13,19 @@ A standalone GUI interface for managing land claims in Vintage Story. This mod p
 
 The UI provides buttons for the following commands:
 
-- **New**: Create a new claim
-- **Start**: Begin claim selection
-- **End**: Finalize claim selection
-- **Add**: Add area to existing claim
-- **Cancel**: Cancel current operation
-- **Save**: Save claim data
-- **U/D**: Adjust grid up/down
-- **N/S**: Adjust grid north/south
-- **E/W**: Adjust grid east/west
-- **OP**: Toggle operation mode (multiply adjustments by -1)
+- **New**: Create a new claim (`/land claim new`)
+- **Start**: Begin claim selection (`/land claim start`)
+- **End**: Finalize claim selection (`/land claim end`)
+- **Add**: Add area to existing claim (`/land claim add`)
+- **Cancel**: Cancel current operation (`/land claim cancel`)
+- **Save**: Save claim data (`/land claim save [name]`)
+- **U**: Grow/shrink claim up (`/land claim grow up 1` or `/land claim shrink up 1`)
+- **D**: Grow/shrink claim down (`/land claim grow down 1` or `/land claim shrink down 1`)
+- **N**: Grow/shrink claim north (`/land claim grow north 1` or `/land claim shrink north 1`)
+- **S**: Grow/shrink claim south (`/land claim grow south 1` or `/land claim shrink south 1`)
+- **E**: Grow/shrink claim east (`/land claim grow east 1` or `/land claim shrink east 1`)
+- **W**: Grow/shrink claim west (`/land claim grow west 1` or `/land claim shrink west 1`)
+- **OP**: Toggle between grow and shrink modes
 
 ## Building
 
