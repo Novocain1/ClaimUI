@@ -77,8 +77,8 @@ namespace ClaimUI
                     radialRoot.CopyOffsetedSibling(-100, 0, 25),    // [3] Add
                     radialRoot.CopyOffsetedSibling(-100, -25, 25),  // [4] Cancel
                     radialRoot.CopyOffsetedSibling(-100, 25, 25),   // [5] Save
-                    radialRoot.CopyOffsetedSibling(-25, -25),       // [6] U (Up)
-                    radialRoot.CopyOffsetedSibling(-25, 25),        // [7] D (Down)
+                    radialRoot.CopyOffsetedSibling(25, -25),        // [6] U (Up)
+                    radialRoot.CopyOffsetedSibling(25, 25),         // [7] D (Down)
                     radialRoot.CopyOffsetedSibling(0, -25),         // [8] N (North)
                     radialRoot.CopyOffsetedSibling(0, 25),          // [9] S (South)
                     radialRoot.CopyOffsetedSibling(25, 0),          // [10] E (East)
