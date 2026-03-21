@@ -3,7 +3,7 @@ using Vintagestory.API.Common;
 
 namespace ClaimUI
 {
-    class ClaimUISystem : ClientModSystem
+    class ClaimUISystem : ModSystem
     {
         public override void StartClientSide(ICoreClientAPI api)
         {
