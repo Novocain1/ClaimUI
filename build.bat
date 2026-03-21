@@ -20,6 +20,7 @@ mkdir "dist\ClaimUI"
 REM Copy files to staging
 copy "bin\ClaimUI.dll" "dist\ClaimUI\" >nul
 copy "bin\resources\modinfo.json" "dist\ClaimUI\" >nul
+copy "bin\resources\modicon.png" "dist\ClaimUI\" >nul
 
 REM Create zip file
 if exist "ClaimUI.zip" del "ClaimUI.zip"
