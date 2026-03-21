@@ -1,8 +1,10 @@
 ## Build artifacts
 bin/
 obj/
+dist/
 *.dll
 *.pdb
+*.zip
 
 ## IDE
 .vs/

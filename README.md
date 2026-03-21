@@ -36,8 +36,20 @@ The UI provides buttons for the following commands:
 
 ### Build Instructions
 
+**Quick Build (creates distributable zip):**
 ```bash
-dotnet build ClaimUI.csproj
+# Windows
+build.bat
+
+# Linux/macOS
+./build.sh
+```
+
+This will create `ClaimUI.zip` ready for distribution.
+
+**Manual Build:**
+```bash
+dotnet build ClaimUI.csproj -c Release
 ```
 
 The compiled mod will be output to the `bin\` directory.
