@@ -6,6 +6,10 @@ dist/
 *.pdb
 *.zip
 
+## Local build scripts (user-specific)
+build-local.bat
+build-local.sh
+
 ## IDE
 .vs/
 .vscode/
