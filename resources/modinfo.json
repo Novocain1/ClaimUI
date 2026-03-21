@@ -1,0 +1,12 @@
+{
+	"type": "code",
+	"name": "Claim UI",
+	"side": "Client",
+	"modid": "claimui",
+	"description": "A GUI interface for managing land claims in Vintage Story. Provides a radial button interface for quick access to claim commands.",
+	"authors": [
+		"Novocain"
+	],
+	"version": "1.0.0",
+	"dependencies": {}
+}
