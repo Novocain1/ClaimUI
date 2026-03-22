@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ClaimUI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-and-copy",
+            "program": "C:/Games/Vintagestory/1.22.X/Vintagestory.exe",
+            "args": [],
+            "cwd": "C:/Games/Vintagestory/1.22.X",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ]
+}
