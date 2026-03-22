@@ -31,6 +31,8 @@ A radial GUI for managing land claims with quick access to all claim commands vi
 <li><strong>Cancel</strong> - Cancel current operation</li>
 <li><strong>Save</strong> - Save claim data</li>
 <li><strong>U/D/N/S/E/W</strong> - Grow or shrink claim in any direction</li>
+<li><strong>List</strong> - List all your claims</li>
+<li><strong>Load</strong> - Load most recent claim for editing</li>
 <li><strong>OP</strong> - Toggle between grow and shrink modes</li>
 </ul>
 

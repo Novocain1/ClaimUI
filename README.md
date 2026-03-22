@@ -25,6 +25,8 @@ The UI provides buttons for the following commands:
 - **S**: Grow/shrink claim south (`/land claim grow south 1` or `/land claim shrink south 1`)
 - **E**: Grow/shrink claim east (`/land claim grow east 1` or `/land claim shrink east 1`)
 - **W**: Grow/shrink claim west (`/land claim grow west 1` or `/land claim shrink west 1`)
+- **List**: List all your claims (`/land list`)
+- **Load**: Load most recent claim for editing (`/land claim load [index]`)
 - **OP**: Toggle between grow and shrink modes
 
 ## Building

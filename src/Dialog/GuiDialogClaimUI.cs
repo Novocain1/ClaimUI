@@ -22,7 +22,7 @@ namespace ClaimUI
             SingleComposer = capi.Gui.CreateCompo("claim", dialogBounds)
                 .AddDialogTitleBar("ClaimUI", () => TryClose(), CairoFont.WhiteSmallText())
                 .AddDialogBG(bgBounds)
-                .AddTextToggleButtons(new string[] { "New", "Start", "End", "Add", "Cancel", "Save", "U", "D", "N", "S", "E", "W" }, CairoFont.ButtonText().WithFontSize(10),
+                .AddTextToggleButtons(new string[] { "New", "Start", "End", "Add", "Cancel", "Save", "U", "D", "N", "S", "E", "W", "List", "Load" }, CairoFont.ButtonText().WithFontSize(10),
                 i =>
                 {
                     int m = op ? -1 : 1;
@@ -64,6 +64,12 @@ namespace ClaimUI
                         case 11:
                             capi.SendChatMessage(op ? "/land claim shrink west 1" : "/land claim grow west 1");
                             break;
+                        case 12:
+                            capi.SendChatMessage("/land list");
+                            break;
+                        case 13:
+                            capi.SendChatMessage("/land claim load " + capi.World.Claims.All.Count);
+                            break;
                         default:
                             break;
                     }
@@ -83,7 +89,9 @@ namespace ClaimUI
                     radialRoot.CopyOffsetedSibling(0, 25),          // [9] S (South)
                     radialRoot.CopyOffsetedSibling(25, 0),          // [10] E (East)
                     radialRoot.CopyOffsetedSibling(-25, 0),         // [11] W (West)
-                    radialRoot,                                     // [12] OP toggle (at center)
+                    radialRoot.CopyOffsetedSibling(-50, -25, 25),         // [12] List
+                    radialRoot.CopyOffsetedSibling(-50, 25, 25),          // [13] Load
+                    radialRoot,                                     // [14] OP toggle (at center)
                 }, "buttons")
                 .AddToggleButton("OP", CairoFont.ButtonText().WithFontSize(10),
                 b =>
