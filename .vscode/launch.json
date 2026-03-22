@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug ClaimUI",
+            "name": "Debug ClaimUI (Hot Reload)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-and-copy",
@@ -10,7 +10,11 @@
             "args": [],
             "cwd": "C:/Games/Vintagestory/1.22.X",
             "console": "internalConsole",
-            "stopAtEntry": false
+            "stopAtEntry": false,
+            "requireExactSource": false,
+            "env": {
+                "DOTNET_MODIFIABLE_ASSEMBLIES": "debug"
+            }
         }
     ]
 }

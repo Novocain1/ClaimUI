@@ -30,6 +30,31 @@
                 "reveal": "silent"
             },
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "type": "shell",
+            "command": "${workspaceFolder}/build-local.bat",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "custom",
+                "pattern": {
+                    "regexp": "^(.*)$",
+                    "file": 1
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^Building ClaimUI",
+                    "endsPattern": "^Build complete"
+                }
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
         }
     ]
 }

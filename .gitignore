@@ -15,6 +15,7 @@ build-local.sh
 .vscode/*
 !.vscode/launch.json
 !.vscode/tasks.json
+!.vscode/settings.json
 *.user
 *.suo
 *.cache

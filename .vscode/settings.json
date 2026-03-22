@@ -1,0 +1,19 @@
+{
+    // Enable hot reload
+    "dotnet.defaultSolution": "ClaimUI.csproj",
+
+    // File watcher settings
+    "files.watcherExclude": {
+        "**/bin/**": true,
+        "**/obj/**": true,
+        "**/dist/**": true
+    },
+
+    // Auto save to trigger hot reload faster
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+
+    // C# configuration
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.enableRoslynAnalyzers": true
+}
